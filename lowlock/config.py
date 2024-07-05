@@ -14,6 +14,12 @@ TEST='test.txt'
 INPUTWAYINDEX=1
 OUTPUTWAYINDEX=0
 STATUS_CODE = ['a', 'r']
+#api信息
+
+API_KEY = 
+MODEL = 
+ENDPOINT=
+API_VERSION="2024-02-01"
 
 # 目录路径
 DIRECTORY_PATH = './test'
