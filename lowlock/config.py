@@ -46,15 +46,3 @@ CNDEAL_TEMPLATE = """
 输出报错信息error和waring以及解决方案
 以下是报错信息(没有信息就输出。)：{body}
 """
-# 定义正则表达式模板来匹配错误信息
-MAYBEERROR_PATTERNS = [
-    re.compile(r'assertion failed', re.IGNORECASE),  # 匹配 assertion failed
-    re.compile(r'compiler error', re.IGNORECASE),  # 匹配 compiler error
-    re.compile(r'(error \w{5}):([^:]+):', re.IGNORECASE),
-    re.compile(r'(error \w{4}):([^:]+):', re.IGNORECASE)
-]
-
-ASSERTIONERROR_PATTERNS = [
-    re.compile(r'assertion failed', re.IGNORECASE),  # 匹配 assertion failed
-    re.compile(r'compiler error', re.IGNORECASE),  # 匹配 compiler error
-]
